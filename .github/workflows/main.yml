@@ -22,7 +22,7 @@ jobs:
 
       - name: Instal doctl
         uses: digitalocean/action-doctl@v2
-        with:
+        env:
           token: ${{ secrets.DIGITALOCEAN_TOKEN }}
 
       - name: Login docker
